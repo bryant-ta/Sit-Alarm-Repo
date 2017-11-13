@@ -1,4 +1,4 @@
-# Sit Alarm Website
+# Sitting Alarm Website
 
 Sitting for more than three hours a day can take years off our lives - literally, by about a couple of years. However, in the face of an impending midterm or that stubborn project, this means nothing. We simply get carried away and forget the time. Well, NO MORE. You tell us the maximum time you want to spend sitting, and our sit alarm will let you know when you've been sitting down too long.
 
