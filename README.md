@@ -1,87 +1,28 @@
-# Project Title
+# Sit Alarm Website
 
-One Paragraph of project description goes here
-
-## Getting Started
-
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
-
-### Prerequisites
-
-What things you need to install the software and how to install them
-
-```
-Give examples
-```
-
-### Installing
-
-A step by step series of examples that tell you have to get a development env running
-
-Say what the step will be
-
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
-
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
-
-## Built With
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
-
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
+Sitting for more than three hours a day can take years off our lives - literally, by about a couple of years. However, in the face of an impending midterm or that stubborn project, this means nothing. We simply get carried away and forget the time. Well, NO MORE. You tell us the maximum time you want to spend sitting, and our sit alarm will let you know when you've been sitting down too long.
 
 ## Authors
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+* Bryant Ta
+* Amy Zhao
 
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+## Running the website
 
-## License
+The main file is index.html. 
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+## How to Use
+
+The default timer is set to 1 hour. You can change the countdown timer by entering a different amount of time (in minutes!) into the text field below the question "How long are you allowed to sit?". Then, press the reset button, and voila, the timer will reset. You can also reset the timer without entering anything into the text field. In that case, the timer will count down again from the time it was previously set to. For example, if the timer was originally set to 1 hour and you press the reset button without entering in a different time, the timer will count down again from 1 hour. 
+
+### The Alarm Goes Off
+When the timer counts down to 0, time's up! The alarm will sound, and you'll see a surprise in the form of a *special* message and, of course, the obligatory meme. 
+
+### Reset the Alarm
+It's as easy as clicking the reset button.
 
 ## Acknowledgments
 
-* Hat tip to anyone who's code was used
-* Inspiration
-* etc
+Thanks to Hirday Gupta, who helped Bryant figure out the audio for the alarm and Amy figure out how to make the meme appear when the alarm went off. 
+
+## Enjoy!!!
