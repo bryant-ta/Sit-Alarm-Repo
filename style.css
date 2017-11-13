@@ -3,3 +3,9 @@
     vertical-align: middle;
     float: none;
 }
+
+#pic {
+    display: none;
+    margin: 0 auto;
+    vertical-align: middle;
+}

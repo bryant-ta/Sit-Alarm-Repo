@@ -51,6 +51,7 @@ var x = setInterval(function() {
     }
     soundFlag = false;
     document.getElementById("timer").innerHTML = "GET UP YOU";
+    document.getElementById("pic").style.display="block";
   } else {
     soundFlag = true;
     snd.pause();
@@ -70,10 +71,12 @@ var x = setInterval(function() {
     <script>
       function resetTimer() {
       countDownDate = new Date().getTime() + document.getElementById("sitTime").value * (1000 * 60);
+      document.getElementById("pic").style.display="none";
       }
     </script>
   </div>
 </div>
 </div>
+<img id="pic" src="171.jpg" width="273" height="351">
 </body>
 </html>
