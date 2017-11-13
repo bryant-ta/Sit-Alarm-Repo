@@ -1,11 +1,15 @@
 .mycenter {
-    display: inline-block;
+    display: inline-block; 
     vertical-align: middle;
     float: none;
 }
-
+.jumbotron {
+    margin-bottom: 0;
+}
 #pic {
     display: none;
     margin: 0 auto;
     vertical-align: middle;
+    padding: 0;
+    top: -10px;
 }
