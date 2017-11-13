@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Get Up You</title>
+  <meta charset="utf-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+
+  <!-- jQuery library -->
+  
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <div class="container align-middle">
+    <h1 class="display-1 text-center"><!-- Display the countdown timer in an element -->
+      <p id="timer" class="text-danger font-weight-normal"></p>
+
+      <script>
+// Set the date we're counting down to
+var countDownDate = new Date().getTime() + 3600000;
+var soundFlag = true;
+var snd = new Audio("alarm2.mp3");
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get todays date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now an the count down date
+  var distance = countDownDate - now;
+  //console.log(distance);
+
+  // Time calculations for days, hours, minutes and seconds
+  //var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+  document.getElementById("timer").innerHTML = 
+  //days + "d " + 
+  hours + "h " + minutes + "m " + seconds + "s ";
+
+  // If the count down is finished, write some text 
+  
+  if (distance < 0) {
+    //clearInterval(x);
+    if (soundFlag) {
+      snd.play();
+    }
+    soundFlag = false;
+    document.getElementById("timer").innerHTML = "GET UP YOU";
+  } else {
+    soundFlag = true;
+    snd.pause();
+    //console.log("IM HERE!");
+    snd.currentTime = 0;
+  }
+}, 100);
+</script>
+</h1>
+<div class="container">
+  <div style="margin: 1em;">
+    <input type="button" value="Reset" onclick="resetTimer()">
+  </div>
+  <div class="jumbotron">
+    <p>How long are you allowed to sit? (Enter minutes)</p>
+    <input type="value" name="enter" value="1" id="sitTime">
+    <script>
+      function resetTimer() {
+      countDownDate = new Date().getTime() + document.getElementById("sitTime").value * (1000 * 60);
+      }
+    </script>
+  </div>
+</div>
+</div>
+</body>
+</html>
